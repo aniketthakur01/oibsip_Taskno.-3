@@ -73,16 +73,7 @@ class transfer extends withdraw {
 }
 
 class txnHistory extends transfer {
-    // int txnHistoryamt;
-
-    txnHistory(deposit depo) {
-        super.depositamt = depo.depositamt;
-    }
-
-    txnHistory(withdraw with) {
-        super.withdrawamt = with.withdrawamt;
-    }
-
+    
     txnHistory(transfer tran) {
         super.transferamt = tran.transferamt;
     }
