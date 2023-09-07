@@ -93,6 +93,7 @@ class quit {
         System.out.println("User Want to quit/end transaction: Enter '1' >>>> else Enter '0' ");
         Scanner s = new Scanner(System.in);
         userquit = s.nextInt();
+        s.close();
 
         if (userquit == 1) {
             System.out.println("Transaction End");
