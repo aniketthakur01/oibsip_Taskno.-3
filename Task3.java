@@ -88,8 +88,6 @@ class txnHistory extends transfer {
     }
 
     public void setdata() {
-        System.out.println("the transaction history is: " + super.depositamt);
-        System.out.println("the transaction history is: " + super.withdrawamt);
         System.out.println("the transaction history is: " + super.transferamt);
     }
 }
