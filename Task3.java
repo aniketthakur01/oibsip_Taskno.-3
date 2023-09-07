@@ -20,6 +20,7 @@ class deposit {
         System.out.println("Enter amount you want to deposit");
         Scanner sc = new Scanner(System.in);
         depositamt = sc.nextInt();
+        sc.close();
 
         this.currentBal = this.currentBal + depositamt;
         System.out.println("Now Current balance after deposit is: " + this.currentBal);
@@ -42,6 +43,7 @@ class withdraw extends deposit {
         System.out.println("Enter the amount you want to withdraw");
         Scanner sc = new Scanner(System.in);
         withdrawamt = sc.nextInt();
+        sc.close();;
 
         System.out.println(this.currentBal);
 
@@ -65,6 +67,7 @@ class transfer extends withdraw {
         System.out.println("Enter the amount you want to transfer");
         Scanner sc = new Scanner(System.in);
         transferamt = sc.nextInt();
+        sc.close();
 
         this.currentBal = this.currentBal - transferamt;
         System.out.println("Now Current balance after transfer is: " + this.currentBal);
@@ -105,7 +108,6 @@ public class Task3 {
         String name;
         int pincode;
         int password;
-        // int currentBal = 0;
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to INDIAN BANK");
@@ -119,6 +121,7 @@ public class Task3 {
 
         System.out.println("Enter the PIN CODE ");
         password = scan.nextInt();
+        scan.close();
         System.out.println("");
         System.out.println("WELCOME " + name);
         System.out.println("");
